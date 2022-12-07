@@ -38,6 +38,93 @@ console.groupEnd("");
 
 ![GroupLogs](https://user-images.githubusercontent.com/43606985/206258437-92b5f4d0-4eeb-4a04-8fa7-7f99252923aa.PNG)
 
+### 3. Console.time
+The `console.time()` method starts a timer you can use to track how long an operation takes. With it you can find out What methods or function you need to use for realisation. But do not forget to put `console.timeEnd()`.It shows ending of timer.
+
+*Example*
+```no-highlight
+console.time();
+let mapArr = arr.map((item, index) => index + ": " + item);
+console.timeEnd();
+
+let loopArray = arr;
+
+console.time();
+for (let i = 0; i < loopArray.length; i++) {
+  loopArray[i] = i + ": " + loopArray[i];
+}
+console.timeEnd();
+```
+
+In this example we can see which operation faster
+
+*View*
+
+![timeLogs](https://user-images.githubusercontent.com/43606985/206260919-160e7d5d-e151-481f-846b-bd2061f45c25.PNG)
+
+### 4. Console.assert
+`console.assert` displays error message If the assertion is true. If the assertion is false, nothing is displayd.
+I'd use it in server requests
+
+*Example*
+```no-highlight
+const flag = true;
+
+console.assert(flag === false, "False");
+console.assert(flag === true, "Nothig to display");
+```
+
+*View*
+
+![assertLogs](https://user-images.githubusercontent.com/43606985/206261650-21ba2d35-5226-4b5a-a88f-0e23371b136b.PNG)
+
+### 5. Console.dir
+This `console.dir()` has little difference between `console.log()`. But It's especially for Object.
+
+*Example*
+```no-highlight
+const personObj = {
+  names: {
+    firstName: "Jack",
+    secondName: "Own",
+  },
+  age: "30",
+  address: {
+    street: "06 DOYERS ST. 8 ARLINGTON DR. 599 NW BAY BLVD",
+    country: "The USA",
+  },
+};
+
+console.log(personObj);
+console.dir(personObj);
+```
+
+*View*
+
+![dirLogs](https://user-images.githubusercontent.com/43606985/206262658-7585bdd8-3d53-4daa-8190-3eb8ab0e1244.PNG)
+
+
+### 6. Console.count
+This `console.count` method logs displays the number of times that this particular call to count() has been called.
+
+I'd recommend this method especially for React. Because with using it we can count How many renders were and it's so useful. And ease quantity of renders. Our project will be optimized
+
+*Example*
+```no-highlight
+const countFun = (arg) => {
+  console.count(arg);
+};
+
+countFun("First");
+countFun("Second");
+countFun("Third");
+```
+
+*View*
+
+![countLogs](https://user-images.githubusercontent.com/43606985/206264124-8c7a24f9-61b5-4e70-8583-3e366fc1b6fd.PNG)
+
+
 
 
 
