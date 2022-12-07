@@ -150,6 +150,37 @@ barfoo();
 
 ![traceLogs](https://user-images.githubusercontent.com/43606985/206265914-baabf68a-55de-4a85-86e1-74c1699fd9b7.PNG)
 
+### 7. Console.profile
+`console.profile() console.profileEnd()` methods to measure the performance of a block of code. Those methods show us Where our code is started and ended.
+
+*Example*
+```no-highlight
+console.profile("Loop");
+
+for (let i = 0; i < 10; i++) {}
+
+console.profileEnd();
+```
+
+*View*
+
+![profileLog](https://user-images.githubusercontent.com/43606985/206266663-fd45ac8a-b567-439f-aa63-c3d06c492c97.PNG)
+
+### 8. Style your console
+You can style your code It's nice ^)
+
+
+**Important:** Style your `console.log` for this important to write %c . Without that our message won't be changed
+
+*Example*
+```no-highlight
+console.log("%cHello World ^)", "color: green; font-weight: bold");
+```
+
+*View*
+
+![styleLogs](https://user-images.githubusercontent.com/43606985/206267038-419115ae-d4e4-43b1-8fa5-df597ed114c8.PNG)
+
 
 
 
