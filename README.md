@@ -5,5 +5,5 @@ But I guess you thought about console.log is gotten old and here I show you What
 
 **Web API** has a lot of other logs. 
 
-## Here you will figure out Why is using console.log's gotten old
+### console.table
 Console.log is gotten old and this PR for improving your debugging 
