@@ -103,7 +103,6 @@ console.dir(personObj);
 
 ![dirLogs](https://user-images.githubusercontent.com/43606985/206262658-7585bdd8-3d53-4daa-8190-3eb8ab0e1244.PNG)
 
-
 ### 6. Console.count
 This `console.count` method logs displays the number of times that this particular call to count() has been called.
 
@@ -123,6 +122,33 @@ countFun("Third");
 *View*
 
 ![countLogs](https://user-images.githubusercontent.com/43606985/206264124-8c7a24f9-61b5-4e70-8583-3e366fc1b6fd.PNG)
+
+### 7. Console.trace
+`console.trace()` method to output a stack trace.
+
+What is it for?
+
+This method shows methods between child and parent methods, Which ones were executed. Below you will understand What I mean.
+
+*Example*
+```no-highlight
+function barfoo() {
+  function foo() {
+    function bar() {
+      console.trace();
+    }
+    bar();
+  }
+
+  foo();
+}
+
+barfoo();
+```
+
+*View*
+
+![traceLogs](https://user-images.githubusercontent.com/43606985/206265914-baabf68a-55de-4a85-86e1-74c1699fd9b7.PNG)
 
 
 
