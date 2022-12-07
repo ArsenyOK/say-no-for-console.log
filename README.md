@@ -3,7 +3,7 @@
 I wanna talk about debugging here. Every developer thinks about debugging the code. And very simple way it's using console.log everywhere.
 But I guess you thought about console.log is gotten old and here I show you What you can use Instead of console.log
 
-**Web API** has a lot of other logs. 
+**Web API** has a lot of other logs. :sunglasses:
 
 ### 1. Console.table
 Display datasets in a table format.
@@ -193,5 +193,5 @@ console.clear
 ## Conclusion
 *After reading this article you can refuse to use `console.log()` and use new logs methods*
 
-**So debugging is a right thing, but don't forget to remove all console logs before pushing your code to repository**
+**So debugging is a right thing, but don't forget to remove all console logs before pushing your code to repository :smile:**
 
