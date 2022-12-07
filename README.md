@@ -150,7 +150,7 @@ barfoo();
 
 ![traceLogs](https://user-images.githubusercontent.com/43606985/206265914-baabf68a-55de-4a85-86e1-74c1699fd9b7.PNG)
 
-### 7. Console.profile
+### 8. Console.profile
 `console.profile() console.profileEnd()` methods to measure the performance of a block of code. Those methods show us Where our code is started and ended.
 
 *Example*
@@ -166,7 +166,7 @@ console.profileEnd();
 
 ![profileLog](https://user-images.githubusercontent.com/43606985/206266663-fd45ac8a-b567-439f-aa63-c3d06c492c97.PNG)
 
-### 8. Style your console
+### 9. Style your console
 You can style your code It's nice ^)
 
 
@@ -181,7 +181,14 @@ console.log("%cHello World ^)", "color: green; font-weight: bold");
 
 ![styleLogs](https://user-images.githubusercontent.com/43606985/206267038-419115ae-d4e4-43b1-8fa5-df597ed114c8.PNG)
 
+### 10. Console.clear
+`console.clear` merely clear your browser console at all
+I think it's clear
 
+*Example*
+```no-highlight
+console.clear
+```
 
 
 
