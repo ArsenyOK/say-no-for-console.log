@@ -6,14 +6,38 @@ But I guess you thought about console.log is gotten old and here I show you What
 **Web API** has a lot of other logs. 
 
 ### 1. Console.table
-Displays datasets in a table format.
+Display datasets in a table format.
 This function takes one required argument `data`, which must be an array or object, and one optional parameter `columns`.
 
 The `data` argument can be an array or an object.
 
 *Example*
 ```no-highlight
-console.table(["limon", "apple", "orange", "brewberry", "cherry"])
+console.table(["limon", "apple", "orange", "brewberry", "cherry"]);
 ```
+*View*
 
-![tableLogs](https://user-images.githubusercontent.com/43606985/206182834-296b2bc7-3247-40a4-b759-4a2d1fded65d.PNG, 'console.table displays')
+![tableLogs](https://user-images.githubusercontent.com/43606985/206253995-ad376f85-b160-46bc-bf7e-fd4a21362bd9.PNG)
+
+### 2. Console.group
+Create new group of message in browser console.
+After calling the next message printed to the console, additional indentation levels will be available until the `console.groupEnd()` call is called.
+
+*Example*
+```no-highlight
+console.group("Array and Object view");
+console.log({
+  name: "John",
+  age: 18,
+  status: "Front-end",
+};);
+console.log(["limon", "apple", "orange", "brewberry", "cherry"]);
+console.groupEnd("");
+```
+*View*
+
+![GroupLogs](https://user-images.githubusercontent.com/43606985/206258437-92b5f4d0-4eeb-4a04-8fa7-7f99252923aa.PNG)
+
+
+
+
