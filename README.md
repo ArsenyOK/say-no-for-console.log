@@ -190,5 +190,8 @@ I think it's clear
 console.clear
 ```
 
+## Conclusion
+*After reading this article you can refuse to use `console.log()` and use new logs methods*
 
+**So debugging is a right thing, but don't forget to remove all console logs before pushing your code to repository**
 
