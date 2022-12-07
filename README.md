@@ -5,5 +5,6 @@ But I guess you thought about console.log is gotten old and here I show you What
 
 **Web API** has a lot of other logs. 
 
-### 1. console.table
-Console.log is gotten old and this PR for improving your debugging 
+### 1. Console.table
+Displays datasets in a table format.
+This function takes one required argument `data`, which must be an array or object, and one optional parameter `columns`.
